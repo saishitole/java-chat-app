@@ -12,7 +12,7 @@ class Client
         {
             System.out.println("Connecting to server");
             System.out.println("connected...");
-            socket = new Socket("192.168.0.102",7777);
+            socket = new Socket("192.168",7777);
             br = new BufferedReader(new InputStreamReader(socket.getInputStream()));
             pw = new PrintWriter(new OutputStreamWriter(socket.getOutputStream()));
             startReading();
